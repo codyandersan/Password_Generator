@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <title>Password Generator</title>
+</head>
+
+<body background="https://w.wallhaven.cc/full/4d/wallhaven-4d2xgn.jpg">
+    <div class="container">
+        <div class="card mx-auto" style="width:max-content; margin-top: 5%;">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="type">Select Password Type:</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="strong"
+                                value="option1" checked>
+                            <label class="form-check-label" for="strong">
+                                Strong Password
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="superStrong"
+                                value="option2">
+                            <label class="form-check-label" for="superStrong">
+                                Super Strong Password
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="weak"
+                                value="option2">
+                            <label class="form-check-label" for="weakStrong">
+                                Weak Password
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="funny"
+                                value="option2">
+                            <label class="form-check-label" for="funny">
+                                Funny Password
+                            </label>
+                        </div>
+                    </div>
+            <button type="submit" class="btn btn-primary" id="create">Generate Password</button>
+            </form>
+        </div>
+        <div class="card mx-auto" style="width:max-content; margin-top: 5%;">
+            <div class="card-body">
+              Your Password is <span id="password">epPAWw6U </span><i class="bi bi-clipboard" id="copyBtn"></i>
+            </div>
+          </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
